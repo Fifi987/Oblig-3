@@ -323,7 +323,7 @@ body {
 }
 
 #produktbar4{
-    align-self: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,7 +345,8 @@ body {
 }
 
 #lignende-produkter{
-    align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .lignende-bilder{
