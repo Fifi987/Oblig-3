@@ -182,10 +182,7 @@ body {
     align-self: center;
     width: 250px;
     height: auto;
-}
 
-.jordansbest img{
-    object-fit: scale-down;
 }
 
 #bestsell{
@@ -466,6 +463,7 @@ body {
         text-align: center;
         align-self: center;
         font-size: xx-large;
+        flex: 1;
 
        }
 
@@ -473,8 +471,17 @@ body {
         text-align: center;
         align-self: center;
         font-size: x-large;
+        flex: 1;
 
        }
+
+       .jordansbest{
+        align-self: center;
+        width: 200px;
+        height: auto;
+        flex: 1;
+    
+    }
    
        #logo{
         display: flex;
