@@ -1,6 +1,14 @@
-a:-webkit-any-link {
+
+.footertxt{
+    color: white;
+    text-decoration: none ;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.midten{
     color: black;
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -11,6 +19,7 @@ body {
    #grid-container {
        display: grid;
        grid-template-areas: "header" "main" "footer" ;
+       grid-template-columns: repeat(1, minmax(0, 1fr));
        
    }
    
@@ -43,15 +52,16 @@ body {
        height: 4rem;
    }
    
-   main section h2{
+   .ikkevish2 {
     display: none;
    }
    
    #logo{
-       scale: 1;
-       text-decoration: none;
+    display: flex;
+    justify-content: right;
+       
+       
    }
-
 
    #search2, #search{
     background-color: white;
@@ -61,7 +71,7 @@ body {
    }
 
    #salg {
-    object-fit: fill;
+    object-fit: scale-down;
     scale: 1;
     align-self: center;
 
@@ -109,6 +119,11 @@ body {
        border-radius: 5px;
        font-weight: 400;
    }
+
+   .navn{
+    color: #000;
+    text-decoration: none;
+   }
    
    main {
        grid-area: main;
@@ -116,12 +131,6 @@ body {
    
    main section img {
        width: 100%;
-   }
-
-   footer h5 {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
    }
    
    footer {
@@ -155,6 +164,235 @@ body {
     font-size: 18px;
 }
 
+.headerikkeforside{
+    
+    background-color: #8D8D8D;
+    font-size: 1.25rem;
+    font-weight: 600;
+    grid-area: header;
+    grid-column: span 3;
+}
+
+.jordansbestseksjon{
+    display: flex;
+    flex-direction: column;
+}
+
+.jordansbest{
+    align-self: center;
+    width: 250px;
+    height: auto;
+}
+
+.jordansbest img{
+    object-fit: scale-down;
+}
+
+#bestsell{
+    object-fit: scale-down;
+}
+
+.omoss{
+    display: flex;
+    flex-direction: column;
+}
+
+.omoss1{
+    align-self: center;
+}
+
+#produkttittel{
+    display: flex;
+    justify-content: center;
+}
+
+#produkt{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#produktsidejordnas{
+    width: 300px;
+    height: 300px;
+}
+
+#produktbar{
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#produktbar2{
+    display: flex;
+    background-color: #A2A2A2;
+    margin-left: -15px;
+    margin-right: -15px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.pris{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+#prisafter{
+    margin: 0px;
+    color: red;
+
+}
+
+#prisbefore{
+    margin: 0px;
+    text-decoration: line-through;
+}
+
+#stars{
+    width: 175px;
+    height: 116.5px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    flex: 1;
+}
+
+#hjerte{
+    display: flex;
+    font-size: 50px;
+    align-self: center;
+    border: 0px;
+}
+
+#hjerte2{
+    display: flex;
+    font-size: 50px;
+    align-self: center;
+    border: 0px;
+}
+
+#handlekurv{
+    font-size: 45px;
+    align-self: center;
+    border: 0px;
+}
+
+.hvitfarge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; 
+    height: 50px; 
+    border: 3px solid black; 
+    border-radius: 50%; 
+    background-color: white;
+}
+
+.lagreogfarge{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 5px;
+    flex: 5;
+}
+
+#produktbar3{
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+    margin-left: -15px;
+    margin-right: -15px;
+    gap: 2rem;
+}
+
+.storrelse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; 
+    height: 50px; 
+    border: 3px solid black; 
+    border-radius: 50%; 
+    background-color: #4b4b4b;
+    color: white;
+}
+
+#produktbar4{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
+    height: 50px; 
+    border: 3px solid black; 
+    border-radius: 30px; 
+    background-color: #4b4b4b;
+    color: white;
+
+}
+
+#lignende-produkter{
+    align-self: center;
+}
+
+.lignende-bilder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.lignende-bilder1{
+    width: 150px;
+    height: 150px;
+}
+
+.lignende-bildenavn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    gap: 8.5rem;
+    font-size: 20px;
+}
+
+#produkt-beskrivelse-desktop{
+    display: none;
+}
+
+#produkttitteldesktop{
+    display: none;
+}
+
+.storrelse1{
+    display: none;
+}
+
+#stars1{
+    display: none; 
+}
+
+.left-bilder{
+    display: none;
+}
+
+.lagreogfargedesktop{
+    display: none;
+}
+
    @media only screen and (min-width:600px){
        .navigasjon{
            display: flex;
@@ -170,7 +408,23 @@ body {
            display: none;
        }
 
+       #grid-container {
+        display: grid;
+        grid-template-areas: "header" "main" "footer" ;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        
+       }
 
+       .omoss{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30rem;
+       }
+
+       .omoss1{
+        align-self: flex-start;
+       }
+       
    
        .flex-section {
            display: flex;
@@ -222,7 +476,9 @@ body {
        }
    
        #logo{
-           scale: 1;
+        display: flex;
+        justify-content: right;
+           
            
        }
        
@@ -237,16 +493,34 @@ body {
         text-decoration: underline;
        }
 
-       header {
+       #headerikkeforside{
+    
+        background-color: #8D8D8D;
+        font-size: 1.25rem;
+        font-weight: 600;
+        grid-area: header;
+        grid-column: span 3;
+    }
+
+       #headerforside {
         background: linear-gradient(to bottom, #8D8D8D 40%, #D9D9D9 60%);
         font-size: 1.25rem;
         font-weight: 600;
         grid-area: header;
-    }
+        grid-column: span 3;
+    }  
+       main{
+        grid-column: span 3;
+       }
+
+       footer{
+        grid-column: span 3;
+       }
+
        #salg{
         height: 200px;
         width: 800px;
-        object-fit: fill;
+        object-fit: scale-down;
         padding: 3rem;
        }
 
@@ -263,4 +537,108 @@ body {
         width: 35px;
         height: 35px;
        }
+
+       #produktbar{
+        display: none;
+    }
+    #left{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 3;
+    }
+
+    #right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex: 3;
+        align-self: first baseline;
+    }
+
+    .left-bilder{
+        display: flex;
+        align-self: center;
+        margin: 1rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    #stars{
+        display: none;
+    }
+
+    #stars1{
+        display: flex;
+        width: 175px;
+        height: 116.5px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        flex: 1;
+        align-self: center;
+    }
+    #produkttitteldesktop{
+        display: flex;
+        flex: 3;
+        align-self: center;
+    }
+    #produkt-beskrivelse-desktop{
+        display: flex;
+        flex: 3;
+        max-width: fit-content;
+        margin: 1rem;
+        align-self: center;
+    }
+    
+    #produkt{
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: space-around;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    #produktsidejordnas{
+        align-self: center;
+        width: 500px;
+        height: 500px;
+        flex: 1;
+    }
+
+    #produkttittel{
+        display: none;
+    }
+
+    .storrelse1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px; 
+        height: 50px; 
+        border: 3px solid black; 
+        border-radius: 50%; 
+        background-color: #4b4b4b;
+        color: white;
+        margin: 1rem;
+
+    }
+
+    #produktbar3{
+        display: none;
+    }
+
+    .lagreogfargedesktop{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 5px;
+        flex: 5;
+    }
+    .lagreogfarge{
+        display: none;
+    }
+
+    #produktbar4{
+        display: none;
+    }
    }
